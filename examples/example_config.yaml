@@ -1,0 +1,51 @@
+# Example configuration for GPU-accelerated dosimetry simulation
+
+# Radionuclide to simulate
+radionuclide: "Lu-177"
+
+# Number of primary particles to simulate
+num_primaries: 1000000
+
+# Energy cutoff threshold in keV
+energy_cutoff_keV: 10.0
+
+# Number of batches for uncertainty calculation
+num_batches: 10
+
+# Output format: 'file' or 'object'
+output_format: "file"
+
+# Output path (required if output_format='file')
+output_path: "./results/"
+
+# Random seed for reproducibility (null for random)
+random_seed: null
+
+# Computation device: 'cuda' or 'cpu'
+device: "cuda"
+
+# Maximum particles in flight during transport
+max_particles_in_flight: 100000
+
+# Path to decay database
+decay_database_path: "data/decay_databases/default.json"
+
+# Path to cross-section database
+cross_section_database_path: "data/cross_section_databases/default.h5"
+
+# HU-to-material lookup table with multi-range support
+hu_to_material_lut:
+  Air:
+    - [-1000, -950]
+  Lung:
+    - [-950, -150]
+  Fat:
+    - [-150, -50]
+  Soft_Tissue:
+    - [-50, 100]
+  Soft_Tissue_Contrast:
+    - [100, 300]  # Contrast-enhanced soft tissue
+  Bone_Trabecular:
+    - [300, 700]
+  Bone_Cortical:
+    - [700, 3000]
