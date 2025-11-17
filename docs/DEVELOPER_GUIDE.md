@@ -1,4 +1,4 @@
-# Development Guide
+# Developer Guide
 
 ## Overview
 
@@ -17,7 +17,7 @@ This guide is for developers who want to contribute to, extend, or modify MCGPUR
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/MCGPURPTDosimetry.git
+git clone https://github.com/devhliu/MCGPURPTDosimetry.git
 cd MCGPURPTDosimetry
 
 # Create virtual environment
@@ -151,7 +151,6 @@ def calculate_dose(
         >>> material = torch.tensor([1, 1, 2])
         >>> dose = calculate_dose(energy, position, material)
     """
-    # Implementation
     pass
 ```
 
@@ -747,4 +746,4 @@ Include in bug reports:
 
 ---
 
-**Next**: See [TESTING_GUIDE.md](TESTING_GUIDE.md) for comprehensive testing documentation.
+**Next**: See [API_REFERENCE.md](API_REFERENCE.md) for detailed API documentation.

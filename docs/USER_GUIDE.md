@@ -38,7 +38,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/MCGPURPTDosimetry.git
+git clone https://github.com/devhliu/MCGPURPTDosimetry.git
 cd MCGPURPTDosimetry
 
 # Install dependencies

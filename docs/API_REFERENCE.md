@@ -718,4 +718,4 @@ for batch_idx in range(num_batches):
 - [User Guide](USER_GUIDE.md)
 - [Mask-Based Workflow](MASK_BASED_WORKFLOW.md)
 - [Examples](../examples/)
-- [Design Document](../.kiro/specs/gpu-dosimetry-system/design.md)
+- [Design Document](DESIGN_ARCHITECTURE.md)

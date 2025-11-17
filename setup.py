@@ -22,7 +22,7 @@ setup(
     description="GPU-Accelerated Internal Dosimetry Monte Carlo Calculation System",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/MCGPURPTDosimetry",
+    url="https://github.com/devhliu/MCGPURPTDosimetry",
     packages=find_packages(),
     package_data={
         'MCGPURPTDosimetry': [
